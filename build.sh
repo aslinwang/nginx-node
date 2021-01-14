@@ -12,6 +12,6 @@ echo $tag
 
 DOCKER_PROXY=$DOCKER_PROXY
 
-sudo docker build -t ccr.ccs.tencentyun.com/aslinwang/nginx-node:$tag -f Dockerfile .
+sudo docker build -t aslinwang/nginx-node:$tag -f Dockerfile .
 sudo docker login -u $DOCKER_USER -p $DOCKER_PSW 
 sudo docker push aslinwang/nginx-node:$tag
